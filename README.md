@@ -4,7 +4,9 @@ Have you ever noticed a group of friends Playing mobile phone. When you click on
 #Installation
  - Clone this repo (or fork then clone, if you prefer)
   - Run `bower install https://github.com/Shangri-GitHub/waggle-and-verification.git --save-dev`.
-##Example
+
+#Example
+
 ```javascript
  angular.module('myApp.directive', [])
 // 1) .directive('helloWorld', function () {
