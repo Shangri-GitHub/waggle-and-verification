@@ -1,3 +1,7 @@
 #WAGGLE
 ##About
-Have you ever noticed a group of friends at a restaurant and everyone is lost on their smart phones, not engaging with each other at all? As much as I love technology and social-media, I feel that it's more important to be present and engaged in the moment. Waggle is designed to use technology to lose technology, so to speak.
+Have you ever noticed a group of friends Playing mobile phone. When you click on the button on the mobile phone or ipad, button rock will bring you a new experience, could not help but like click with your fingers.
+#Installation
+ - Clone this repo (or fork then clone, if you prefer)
+  - Run `npm install`
+  - if you get permission errors you may need to run `sudo npm install` to install a couple global dependencies
