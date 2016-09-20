@@ -1,0 +1,33 @@
+<nav-bar></nav-bar>
+
+<div class="container">
+    <table class="table table-striped">
+        <tr>
+            <td class="col-md-1">序号</td>
+            <td class="col-md-4">姓名</td>
+            <td class="col-md-4">电话</td>
+            <td class="col-md-3">操作</td>
+        </tr>
+        <tr ng-repeat="master in stuArr" >
+            <td>{{$index}}</td>
+
+            <td ng-if="master.isEdit"><input type="text" ng-model="master.name" class="form-control" placeholder="Username"></td>
+
+            <td ng-if="!master.isEdit"><span ng-bind="master.name "></span></td>
+
+            <td ng-if="master.isEdit"><input type="text" ng-model="master.phone" class="form-control" placeholder="Phone"></td>
+            <td ng-if="!master.isEdit"><span>{{master.phone}}</span></td>
+
+
+            <td>
+                <input type="button" class="btn btn-info " ng-value="{true:'提交', false:'编辑'}[master.isEdit]" ng-click="master.isEdit =!master.isEdit">
+                <button type="button" class="btn btn-danger" ng-click="deleteForm()">删除</button>
+            </td>
+        </tr>
+    </table>
+    <div class="pull-right">
+    <button type="button" class="btn btn-warning" ng-click="createForms()">添加新用户</button>
+    </div>
+</div>
+
+<!--<span>{{stuArr}}</span>-->

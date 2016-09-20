@@ -1,0 +1,30 @@
+<nav-bar active-index="0"></nav-bar>
+
+<div class="container">
+    <div class="page-header">
+        <h2>个税计算器</h2>
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">请输入税前收入</span>
+        <input type="text" class="form-control" ng-model="moneyInput">
+        <span class="input-group-addon">元</span>
+    </div>
+    <br/>
+    <input ng-click="sub()" type="button" class="btn btn-primary" value="提交"/><br/>
+    <br/>
+    <div class="input-group">
+        <span class="input-group-addon">税前收入</span>
+        <input type="text" class="form-control" ng-model="moneyOutput">
+        <span class="input-group-addon">元</span>
+    </div><br/>
+    <div class="input-group">
+        <span class="input-group-addon">缴税金额</span>
+        <input type="text" class="form-control" ng-model="taxMoney">
+        <span class="input-group-addon">元</span>
+    </div><br/>
+    <div class="input-group">
+        <span class="input-group-addon">税后收入</span>
+        <input type="text" class="form-control" ng-model="realMoney">
+        <span class="input-group-addon">元</span>
+    </div>
+</div>
