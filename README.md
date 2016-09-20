@@ -3,8 +3,8 @@
 Have you ever noticed a group of friends Playing mobile phone. When you click on the button on the mobile phone or ipad, button rock will bring you a new experience, could not help but like click with your fingers.
 #Installation
  - Clone this repo (or fork then clone, if you prefer)
-  - Run `bower install https://github.com/Shangri-GitHub/waggle-and-verification.git --save-dev`,
-#Example
+  - Run `bower install https://github.com/Shangri-GitHub/waggle-and-verification.git --save-dev`.
+##Example
 ```javascript
  angular.module('myApp.directive', [])
 // 1) .directive('helloWorld', function () {
