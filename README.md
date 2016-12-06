@@ -7,7 +7,7 @@ Have you ever noticed a group of friends Playing mobile phone. When you click on
 
 #Example
 
-```
+```javascript
  angular.module('myApp.directive', [])
 // 1) .directive('helloWorld', function () {
         return {
