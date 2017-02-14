@@ -16,7 +16,12 @@ angular.module('myApp.controllers', [])
         // delete
         $scope.deleteForm = function ($index) {
             $scope.stuArr.splice($index, 1);
-        }
+        };
+        // ng-repeat加载完成之后开始执行方法
+        $scope.$on('ngRepeatFinished',function () {
+            // function
+        })
+
     })
     .controller('colorSelectCtrl', function ($scope) {
         $scope.colors = [

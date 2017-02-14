@@ -8,7 +8,7 @@
             <td class="col-md-4">电话</td>
             <td class="col-md-3">操作</td>
         </tr>
-        <tr ng-repeat="master in stuArr" >
+        <tr ng-repeat="master in stuArr" on-finish-render>
             <td>{{$index}}</td>
 
             <td ng-if="master.isEdit"><input type="text" ng-model="master.name" class="form-control" placeholder="Username"></td>
