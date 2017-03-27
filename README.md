@@ -105,6 +105,14 @@ Have you ever noticed a group of friends Playing mobile phone. When you click on
             }
         }
     });
+     //登录拦截器
+        $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+            if (toState.name == 'login')return;
+            if (!$scope.logined) {
+                event.preventDefault();
+                $state.go("login");
+            }
+        });
 ```
  
 # Issues
