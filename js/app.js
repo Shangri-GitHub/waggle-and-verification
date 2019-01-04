@@ -29,6 +29,11 @@ angular.module('myApp', ['ui.router', 'myApp.controllers', 'myApp.config', 'myAp
                 templateUrl: 'templates/calc.html',
                 controller: 'calcCtrl'
             })
+          .state('calc.page1', {
+            url: '/page1',
+            templateUrl: 'templates/page1.html',
+            controller: 'page1Ctrl'
+          })
             .state('submitform', {
                 url: '/submitform',
                 templateUrl: 'templates/submitform.html',

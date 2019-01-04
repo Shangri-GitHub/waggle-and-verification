@@ -16,15 +16,22 @@
         <span class="input-group-addon">税前收入</span>
         <input type="text" class="form-control" ng-model="moneyOutput">
         <span class="input-group-addon">元</span>
-    </div><br/>
+    </div>
+    <br/>
     <div class="input-group">
         <span class="input-group-addon">缴税金额</span>
         <input type="text" class="form-control" ng-model="taxMoney">
         <span class="input-group-addon">元</span>
-    </div><br/>
+    </div>
+    <br/>
     <div class="input-group">
         <span class="input-group-addon">税后收入</span>
         <input type="text" class="form-control" ng-model="realMoney">
         <span class="input-group-addon">元</span>
     </div>
+
+    <br />
+    <button class="btn btn-danger" ng-click="toPage1()">跳转</button>
+
+    <ui-view></ui-view>
 </div>
